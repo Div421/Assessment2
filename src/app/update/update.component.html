@@ -1,0 +1,28 @@
+
+<div class="container-fluid">
+        <form class="col-md-6" (ngSubmit)="editPersonal()">
+                <div class="form-group">
+                        <h6>Edit {{personalInfo1.name}} Details</h6>
+                        <label for="my-input">Name</label>
+                        <input placeholder="Name" class="form-control" type="text" name="name" [(ngModel)]="personalInfo1.name">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">DOB</label>
+                        <input placeholder="DOB" class="form-control" type="text" name="dob" [(ngModel)]="personalInfo1.dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">Address</label>
+                        <input placeholder="Address" class="form-control" type="text" name="addr" [(ngModel)]="personalInfo1.addr">
+                    </div>
+                    <div class="form-group">
+                            <label for="my-input">Phone Number</label>
+                            <input placeholder="Phone#" class="form-control" type="number" name="phone" [(ngModel)]="personalInfo1.phone">
+                        </div>
+                        <button class="btn btn-primary btn-sm" type="submit">Edit Peronal Details</button>
+                        
+
+
+        </form>
+</div>
+
+

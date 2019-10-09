@@ -1,0 +1,27 @@
+
+
+<div class="container-fluid">
+        <form (ngSubmit)="editEdu()" class="col-md-6">
+            
+    
+            <div class="form-group">
+                <h6>Enter {{eduInfo1.name}} Details</h6>
+                <label for="my-input">Degree</label>
+                <input placeholder="Degree" class="form-control" type="text" name="degree" [(ngModel)]="eduInfo1.degree">
+            </div>
+            <div class="form-group">
+                <label for="my-input">Marks</label>
+                <input placeholder="Marks" class="form-control" type="number" name="marks" [(ngModel)]="eduInfo1.marks">
+            </div>
+            <div class="form-group">
+                <label for="my-input">Stream</label>
+                <input placeholder="Stream" class="form-control" type="text" name="stream" [(ngModel)]="eduInfo1.stream">
+            </div>
+            <div class="form-group">
+                    <label for="my-input">College</label>
+                    <input placeholder="College" class="form-control" type="text" name="college" [(ngModel)]="eduInfo1.college">
+                </div>
+            <button class="btn btn-primary" type="submit">Edit Educational Details</button>
+        </form>
+    </div>
+    

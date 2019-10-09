@@ -1,0 +1,23 @@
+<p>view works!</p>
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Address</th>
+            <th>Phone#</th>
+            <th>Personal Details</th>
+            <th>Educational Details</th>
+        </thead>
+        <tbody *ngFor = "let p of personalInfo">
+            <td>{{p.name}}</td>
+            <td>{{p.dob}}</td>
+            <td>{{p.addr}}</td>
+            <td>{{p.phone}}</td>
+            <td><a routerLink="/editPersonal/{{p.id}}" class="btn btn-sm btn-primary">Edit</a></td>
+            <td><a routerLink="/editEdu/{{p.id}}" class="btn btn-sm btn-primary">Edit</a></td>
+            
+           
+        </tbody>
+    </table>
+</div>
